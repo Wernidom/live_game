@@ -15,6 +15,7 @@ void print_grid(int grid[HEIGHT][WIDTH], int generation)
 {
     CLEAR_SCREEN();
 
+    
     for (int row = 0; row < HEIGHT; row++) {
         for (int col = 0; col < WIDTH; col++) {
             printf("%c ", grid[row][col] ? '#' : '.');

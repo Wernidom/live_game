@@ -15,7 +15,6 @@ void print_grid(int grid[HEIGHT][WIDTH], int generation)
 {
     CLEAR_SCREEN();
 
-    
     for (int row = 0; row < HEIGHT; row++) {
         for (int col = 0; col < WIDTH; col++) {
             printf("%c ", grid[row][col] ? '#' : '.');
@@ -37,7 +36,6 @@ void next_generation(int current[HEIGHT][WIDTH], int next[HEIGHT][WIDTH])
             for (int dr = -1; dr <= 1; dr++) {
                 for (int dc = -1; dc <= 1; dc++) {
                     if (dr == 0 && dc == 0) continue;
-
                     int nr = row + dr;
                     int nc = col + dc;
                     if (nr >= 0 && nr < HEIGHT && nc >= 0 && nc < WIDTH) {
